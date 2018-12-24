@@ -2,12 +2,12 @@ const Email = require('../models/schemas/email.schema').Email
 
 let saveEmail = (req, res) => {
 
-    const id = req.body.payload.id || ''
-    const sender = req.body.payload.sender || ''
-    const name = req.body.payload.name || ''
-    const subject = req.body.payload.subject || ''
-    const body = req.body.payload.body || ''
-    const date = req.body.payload.date || ''
+    const id = req.body.id || ''
+    const sender = req.body.sender || ''
+    const name = req.body.name || ''
+    const subject = req.body.subject || ''
+    const body = req.body.body || ''
+    const date = req.body.date || ''
    
     const email = new Email({
         id: id,
