@@ -2,7 +2,6 @@ const Email = require('../models/schemas/email.schema').Email
 
 let saveEmail = (req, res) => {
 
-    const id = req.body.id || ''
     const sender = req.body.sender || ''
     const name = req.body.name || ''
     const subject = req.body.subject || ''
@@ -10,7 +9,6 @@ let saveEmail = (req, res) => {
     const date = req.body.date || ''
    
     const email = new Email({
-        id: id,
         sender: sender,
         name: name,
         subject: subject,
