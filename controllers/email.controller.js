@@ -18,6 +18,9 @@ let saveEmail = (req, res) => {
         date: date,
     })
 
+    console.log("Email: " + email)
+    console.log("Body: " + req.body)
+
     email.save().then( res.status(200).json(email).end())
 
 }
