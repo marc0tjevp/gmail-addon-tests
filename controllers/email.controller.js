@@ -1,4 +1,4 @@
-const Email = require('../models/schemas/email.schema')
+const Email = require('../models/schemas/email.schema').Email
 
 let saveEmail = (req, res) => {
    
